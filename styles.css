@@ -35,6 +35,10 @@ body{
     box-shadow: 0 5px 30px -15px rgba(0, 0, 0, 0.586);
 }
     
+.parent h2{
+    font-size: 20px;
+}
+
 .parent > div{
     padding: 2.5em;
 }
@@ -51,7 +55,7 @@ body{
     color: hsl(179, 100%, 31%);
 }
 
-.community h3{
+.community h2{
     color: var(--voma);
     margin: .5em 0;
 }
@@ -132,6 +136,9 @@ footer a{
         grid-template-rows: repeat(3, .5fr);
         font-size: smaller;
         max-width: 300px;
+    }
+    .parent h2{
+        font-size: 17px;
     }
     .parent > div{
         padding: 1.5em;
