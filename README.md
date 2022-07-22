@@ -41,6 +41,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [@Wardinul](https://www.your-site.com)
-- Frontend Mentor - [@Wardin](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Wardin](https://www.frontendmentor.io/profile/Wardinul)
 
