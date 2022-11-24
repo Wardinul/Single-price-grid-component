@@ -26,7 +26,7 @@ body{
     padding: 2em;
 }
 
-.parent {
+.container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width:100%;
@@ -37,63 +37,63 @@ body{
     box-shadow: 0 5px 30px -15px rgba(0, 0, 0, 0.586);
 }
     
-.parent h2{
+.container h2{
     font-size: 20px;
 }
 
-.parent > div{
+.container > div{
     padding: 2.5em;
 }
 
-.parent > div header{
+.container > div header{
     margin-bottom: 1.5em;
 }
 
-.community { grid-area: 1 / 1 / 2 / 3; }
-.subscription { grid-area: 2 / 1 / 3 / 2; }
-.about { grid-area: 2 / 2 / 3 / 3; }
+.container__community { grid-area: 1 / 1 / 2 / 3; }
+.container__subscription { grid-area: 2 / 1 / 3 / 2; }
+.container__about { grid-area: 2 / 2 / 3 / 3; }
     
-.community header{
+.container__community header{
     color: hsl(179, 100%, 31%);
 }
 
-.community h2{
+.container__community h2{
     color: var(--voma);
     margin: .5em 0;
 }
 
-.community p{
+.container__community p{
     color: var(--grayish-blue);
     line-height: 1.5;
 }
 
-.subscription header,
-.about header{
+.container__subscription header,
+.container__about header{
     color: var(--light-gray);
 }
 
-.subscription{
+.container__subscription{
     display: flex;
     flex-direction: column;
     background-color: hsl(179, 100%, 31%);
     position: relative;
 }
 
-.subscription .pricing{
+.container__subscription__pricing{
     display: flex;
     align-items: center;
 }
 
-.subscription .pricing h1{
+.container__subscription__pricing h1{
     color: white;
 }
 
-.subscription .pricing span{
+.container__subscription__pricing span{
     color: rgba(255, 255, 255, 0.575);
     margin-left: 1em;
 }
 
-.subscription p{
+.container__subscription p{
     color: var(--light-gray);
     margin: .5em 0;
 }
