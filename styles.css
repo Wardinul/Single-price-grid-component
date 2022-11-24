@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
+/* General Styles */
+
 *, *::after, *::before{
     box-sizing: border-box;
     margin:0;
@@ -26,6 +28,8 @@ body{
     padding: 2em;
 }
 
+/* Main Container Styles */
+
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -49,10 +53,14 @@ body{
     margin-bottom: 1.5em;
 }
 
+/* Grid Layout */
+
 .container__community { grid-area: 1 / 1 / 2 / 3; }
 .container__subscription { grid-area: 2 / 1 / 3 / 2; }
 .container__about { grid-area: 2 / 2 / 3 / 3; }
     
+/* Community Section */
+
 .container__community header{
     color: hsl(179, 100%, 31%);
 }
@@ -66,6 +74,8 @@ body{
     color: var(--grayish-blue);
     line-height: 1.5;
 }
+
+/* Subscription Section */
 
 .container__subscription header,
 .container__about header{
@@ -110,16 +120,20 @@ body{
     box-shadow: 0px 15px 25px -18px rgb(0, 0, 0);
 }
 
-.about{
+/* About Section */
+
+.container__about{
     background-color: var(--cyan);
 }
 
-.about ul li{
+.container__about ul li{
     list-style-type: none;
     color: var(--light-gray);
     margin-top: auto;
     margin-bottom: .3em;
 }
+
+/* Footer Styles */
 
 footer{
     margin: 1em 0;
@@ -131,6 +145,8 @@ footer a{
     text-decoration: none;
     color: hsl(179, 100%, 31%);
 }
+
+/* Media Queries */
 
 @media screen and (max-width: 43.75em) {
     .container{
